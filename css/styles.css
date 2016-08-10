@@ -1,0 +1,55 @@
+* {
+  font-family: "Courier New", serif, monospace;
+}
+
+body {
+  background: url(../img/you.jpeg) no-repeat center center fixed;
+  origin background-size: cover;
+  background-size:  cover;
+  background-color: #000000;
+}
+
+h1 {
+  padding-bottom: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 15px;
+  border: 2px dashed black;
+  padding: 10px;
+  text-align: justify;
+}
+/*class selectors*/
+
+.radio label{
+  font-size: 20px;
+}
+
+/*id selectors************************/
+
+#byline {
+  padding-bottom: 20px;
+}
+
+#receipt {
+  display: none;
+}
+
+/*Media Queries******************/
+
+@media only screen and (max-width:600px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  h3, p, .radio label {
+    font-size: 14px;
+  }
+}

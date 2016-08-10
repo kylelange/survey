@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>forms practice</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Forms Practice</h1>
+      <div id="suveyuser">
+        <h3 id="byline">Please fill out your information:</h3>
+        <form>
+          <h3>Name:</h3>
+          <div class="form-group">
+            <label for="name">Enter your first and last name, please: </label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <h3>Address:</h3>
+          <div class="form-group">
+            <label for="address">Your address: </label>
+            <input id="address" class="form-control" type="text">
+          </div>
+          <h3>How many steps do you typically walk a day?  We'll tell you your monthly average.</h3>
+          <div class="form-group">
+            <label for="monthSteps"> Enter your daily step average:</label>
+            <input id="monthSteps" class="form-control" type="number" >
+          </div>
+          <h3>Your favorite drink? You'll get a free one, on us.</h3>
+          <select class="form-control" id="beverage">
+            <option>Drip coffee</option>
+            <option>Tea</option>
+            <option>Kombucha</option>
+            <option>Water</option>
+          </select>
+          <h3>Want your favorite sandwich? Not the witch that lives in the sand!</h3>
+          <select class="form-control" id="sando">
+            <option>Bacon, Lettuce and Fried Green Tomatoes</option>
+            <option>Expeller-Pressed Peanut Butter and Our Mom's Homemade Apricot Jam</option>
+            <option>Turkey and "free shavacadadoo!"</option>
+            <option>Albacore Tuna Salad</option>
+          </select>
+          <h3>Your favorite ice cream? Yeah, you'll get one of these too. On the house.</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="chocolate" checked>
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="cookies and cream">
+              Cookies and Cream
+            </label>
+          </div>
+          <h3>What date do you want us to bring you all these goodies?</h3>
+          <div class="form-group">
+            <label for="born">Delivery Date:</label>
+            <input id="born" class="form-control" type="date">
+          </div>
+          <h3>And, just for our records: what is your favorite color?</h3>
+          <div class="form-group">
+            <label for="favColor">What is your favorite color?</label>
+            <input id="favColor" class="form-control" type="color">
+          </div>
+          <button type="submit" class="btn">Enter</button>
+        </form>
+      </div>
+      <div id="receipt">
+        <p>Here are your results, <span class="name"></span>. You walk <span class="monthSteps"></span> steps a month!  You deserve some treats. The drink you ordered is: <span class="beverage"></span>. You are going to tuck into our <span class="sando"></span> sandwich. Your favorite flavor of ice cream is: <span class="flavor"></span>. Your favorite color, in a hexidecimal value, is: <span class="favColor"></span>. Just to confirm, your shipping address is: <span class="address"></span>, and your delivery date is <span class="born"?></span></p>
+      </div>
+    </div>
+  </body>
+</html>
